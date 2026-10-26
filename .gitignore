@@ -1,0 +1,8 @@
+# Секрети — ніколи в репозиторій
+.env
+
+# Згенероване
+report.html
+__pycache__/
+.venv/
+.DS_Store

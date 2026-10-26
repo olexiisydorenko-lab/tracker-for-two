@@ -1,0 +1,11 @@
+[project]
+name = "tracker-for-two"
+version = "0.1.0"
+description = "Спільний фінансовий трекер Олі й Марка на Beancount 3 і Fava (WIT 5.0, ДЗ #3)"
+requires-python = ">=3.12"
+dependencies = [
+    "beancount>=3.2,<4",
+    "beanquery",
+    "fava",
+    "python-dotenv",
+]

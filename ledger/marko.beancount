@@ -1,0 +1,496 @@
+; Згенеровано import.py з виписки Марко — не редагуйте руками.
+
+2026-08-01 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -24.64 PLN
+  Expenses:Марко:Продукти
+
+2026-08-01 * "BOLT.EU/R TALLINN"
+  Assets:Марко:Рахунок                         -19.58 PLN
+  Expenses:Марко:Транспорт
+
+2026-08-02 * "UBER *TRIP HELP.UBER.COM"
+  Assets:Марко:Рахунок                         -35.07 PLN
+  Expenses:Марко:Транспорт
+
+2026-08-03 * "ZDROFIT KARNET MIESIĘCZNY WARSZAWA" #fixed
+  Assets:Марко:Рахунок                        -159.00 PLN
+  Expenses:Марко:Спорт
+
+2026-08-03 * "KAUFLAND WARSZAWA MOKOTÓW"
+  Assets:Марко:Рахунок                        -226.21 PLN
+  Expenses:Марко:Продукти
+
+2026-08-04 * "KAUFLAND WARSZAWA MOKOTÓW"
+  Assets:Марко:Рахунок                        -181.85 PLN
+  Expenses:Марко:Продукти
+
+2026-08-06 * "GOOGLE *YOUTUBE PREMIUM" #fixed
+  Assets:Марко:Рахунок                         -25.99 PLN
+  Expenses:Марко:Підписки
+
+2026-08-08 * "STEAMGAMES.COM 4259522985"
+  Assets:Марко:Рахунок                         -87.00 PLN
+  Expenses:Марко:Розваги
+
+2026-08-09 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -11.19 PLN
+  Expenses:Марко:Продукти
+
+2026-08-09 * "UBER *TRIP HELP.UBER.COM"
+  Assets:Марко:Рахунок                         -47.59 PLN
+  Expenses:Марко:Транспорт
+
+2026-08-09 * "PYSZNE.PL"
+  Assets:Марко:Рахунок                         -66.66 PLN
+  Expenses:Марко:Доставка-Їжі
+
+2026-08-11 * "BIEDRONKA 4417 WARSZAWA"
+  Assets:Марко:Рахунок                         -19.58 PLN
+  Expenses:Марко:Продукти
+
+2026-08-12 * "ORANGE POLSKA S.A. ŚWIATŁOWÓD" #fixed
+  Assets:Марко:Рахунок                         -79.00 PLN
+  Expenses:Марко:Інтернет-Телефон
+
+2026-08-12 * "ORANGE POLSKA S.A. ABONAMENT GSM" #fixed
+  Assets:Марко:Рахунок                         -55.00 PLN
+  Expenses:Марко:Інтернет-Телефон
+
+2026-08-12 * "UBER *TRIP HELP.UBER.COM"
+  Assets:Марко:Рахунок                         -22.32 PLN
+  Expenses:Марко:Транспорт
+
+2026-08-14 * "AUCHAN WARSZAWA"
+  Assets:Марко:Рахунок                        -258.81 PLN
+  Expenses:Марко:Продукти
+
+2026-08-15 * "UBER *TRIP HELP.UBER.COM"
+  Assets:Марко:Рахунок                         -39.42 PLN
+  Expenses:Марко:Транспорт
+
+2026-08-16 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -33.39 PLN
+  Expenses:Марко:Продукти
+
+2026-08-16 * "COSTA COFFEE WARSZAWA"
+  Assets:Марко:Рахунок                         -21.00 PLN
+  Expenses:Марко:Кафе
+
+2026-08-17 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -28.36 PLN
+  Expenses:Марко:Продукти
+
+2026-08-17 * "MANEKIN WARSZAWA"
+  Assets:Марко:Рахунок                         -91.38 PLN
+  Expenses:Марко:Кафе
+
+2026-08-19 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -25.63 PLN
+  Expenses:Марко:Продукти
+
+2026-08-20 * "PGE OBRÓT S.A. ENERGIA ELEKTRYCZNA" #fixed
+  Assets:Марко:Рахунок                        -142.30 PLN
+  Expenses:Марко:Світло
+
+2026-08-21 * "SUPER-PHARM WARSZAWA"
+  Assets:Марко:Рахунок                         -60.34 PLN
+  Expenses:Марко:Краса-Побут
+
+2026-08-22 * "BIEDRONKA 4417 WARSZAWA"
+  Assets:Марко:Рахунок                         -66.29 PLN
+  Expenses:Марко:Продукти
+
+2026-08-22 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -34.70 PLN
+  Expenses:Марко:Продукти
+
+2026-08-23 * "BIEDRONKA 4417 WARSZAWA"
+  Assets:Марко:Рахунок                         -20.90 PLN
+  Expenses:Марко:Продукти
+
+2026-08-23 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -17.89 PLN
+  Expenses:Марко:Продукти
+
+2026-08-23 * "BOLT.EU/R TALLINN"
+  Assets:Марко:Рахунок                         -35.26 PLN
+  Expenses:Марко:Транспорт
+
+2026-08-23 * "PYSZNE.PL"
+  Assets:Марко:Рахунок                         -94.56 PLN
+  Expenses:Марко:Доставка-Їжі
+
+2026-08-24 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -37.13 PLN
+  Expenses:Марко:Продукти
+
+2026-08-25 * "PYSZNE.PL"
+  Assets:Марко:Рахунок                         -68.61 PLN
+  Expenses:Марко:Доставка-Їжі
+
+2026-08-27 * "NORTHWIND LOGISTICS SP. Z O.O. WYNAGRODZENIE 08/2026"
+  Assets:Марко:Рахунок                        7600.00 PLN
+  Income:Марко:Зарплата
+
+2026-08-27 * "BIEDRONKA 4417 WARSZAWA"
+  Assets:Марко:Рахунок                         -42.17 PLN
+  Expenses:Марко:Продукти
+
+2026-08-27 * "PYSZNE.PL"
+  Assets:Марко:Рахунок                         -50.33 PLN
+  Expenses:Марко:Доставка-Їжі
+
+2026-08-27 * "COSTA COFFEE WARSZAWA"
+  Assets:Марко:Рахунок                         -14.69 PLN
+  Expenses:Марко:Кафе
+
+2026-08-28 * "BOLT.EU/R TALLINN"
+  Assets:Марко:Рахунок                         -23.91 PLN
+  Expenses:Марко:Транспорт
+
+2026-08-29 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -16.43 PLN
+  Expenses:Марко:Продукти
+
+2026-08-30 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -32.68 PLN
+  Expenses:Марко:Продукти
+
+2026-09-01 * "BIEDRONKA 4417 WARSZAWA"
+  Assets:Марко:Рахунок                         -19.54 PLN
+  Expenses:Марко:Продукти
+
+2026-09-02 * "BOLT.EU/R TALLINN"
+  Assets:Марко:Рахунок                         -28.63 PLN
+  Expenses:Марко:Транспорт
+
+2026-09-03 * "ZDROFIT KARNET MIESIĘCZNY WARSZAWA" #fixed
+  Assets:Марко:Рахунок                        -159.00 PLN
+  Expenses:Марко:Спорт
+
+2026-09-03 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -36.26 PLN
+  Expenses:Марко:Продукти
+
+2026-09-05 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -14.61 PLN
+  Expenses:Марко:Продукти
+
+2026-09-06 * "GOOGLE *YOUTUBE PREMIUM" #fixed
+  Assets:Марко:Рахунок                         -25.99 PLN
+  Expenses:Марко:Підписки
+
+2026-09-06 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -14.94 PLN
+  Expenses:Марко:Продукти
+
+2026-09-10 * "KAUFLAND WARSZAWA MOKOTÓW"
+  Assets:Марко:Рахунок                        -187.69 PLN
+  Expenses:Марко:Продукти
+
+2026-09-10 * "BIEDRONKA 4417 WARSZAWA"
+  Assets:Марко:Рахунок                         -41.94 PLN
+  Expenses:Марко:Продукти
+
+2026-09-10 * "COSTA COFFEE WARSZAWA"
+  Assets:Марко:Рахунок                         -15.27 PLN
+  Expenses:Марко:Кафе
+
+2026-09-11 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                          -9.66 PLN
+  Expenses:Марко:Продукти
+
+2026-09-12 * "ORANGE POLSKA S.A. ŚWIATŁOWÓD" #fixed
+  Assets:Марко:Рахунок                         -79.00 PLN
+  Expenses:Марко:Інтернет-Телефон
+
+2026-09-12 * "ORANGE POLSKA S.A. ABONAMENT GSM" #fixed
+  Assets:Марко:Рахунок                         -55.00 PLN
+  Expenses:Марко:Інтернет-Телефон
+
+2026-09-12 * "KAUFLAND WARSZAWA MOKOTÓW"
+  Assets:Марко:Рахунок                        -237.62 PLN
+  Expenses:Марко:Продукти
+
+2026-09-12 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -23.49 PLN
+  Expenses:Марко:Продукти
+
+2026-09-13 * "BIEDRONKA 4417 WARSZAWA"
+  Assets:Марко:Рахунок                         -62.60 PLN
+  Expenses:Марко:Продукти
+
+2026-09-13 * "ALLEGRO.PL"
+  Assets:Марко:Рахунок                         -96.85 PLN
+  Expenses:Марко:Покупки
+
+2026-09-14 * "COSTA COFFEE WARSZAWA"
+  Assets:Марко:Рахунок                         -16.89 PLN
+  Expenses:Марко:Кафе
+
+2026-09-15 * "KAUFLAND WARSZAWA MOKOTÓW"
+  Assets:Марко:Рахунок                        -215.47 PLN
+  Expenses:Марко:Продукти
+
+2026-09-15 * "UBER *TRIP HELP.UBER.COM"
+  Assets:Марко:Рахунок                         -31.97 PLN
+  Expenses:Марко:Транспорт
+
+2026-09-15 * "PYSZNE.PL"
+  Assets:Марко:Рахунок                         -94.75 PLN
+  Expenses:Марко:Доставка-Їжі
+
+2026-09-17 * "KAUFLAND WARSZAWA MOKOTÓW"
+  Assets:Марко:Рахунок                        -215.59 PLN
+  Expenses:Марко:Продукти
+
+2026-09-17 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -24.36 PLN
+  Expenses:Марко:Продукти
+
+2026-09-18 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -12.25 PLN
+  Expenses:Марко:Продукти
+
+2026-09-20 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -20.18 PLN
+  Expenses:Марко:Продукти
+
+2026-09-20 * "PYSZNE.PL"
+  Assets:Марко:Рахунок                         -53.88 PLN
+  Expenses:Марко:Доставка-Їжі
+
+2026-09-21 * "PGE OBRÓT S.A. ENERGIA ELEKTRYCZNA" #fixed
+  Assets:Марко:Рахунок                        -138.90 PLN
+  Expenses:Марко:Світло
+
+2026-09-21 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -14.60 PLN
+  Expenses:Марко:Продукти
+
+2026-09-21 * "PYSZNE.PL"
+  Assets:Марко:Рахунок                         -72.40 PLN
+  Expenses:Марко:Доставка-Їжі
+
+2026-09-22 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -36.46 PLN
+  Expenses:Марко:Продукти
+
+2026-09-22 * "UBER *TRIP HELP.UBER.COM"
+  Assets:Марко:Рахунок                         -28.77 PLN
+  Expenses:Марко:Транспорт
+
+2026-09-23 * "BIEDRONKA 4417 WARSZAWA"
+  Assets:Марко:Рахунок                         -58.60 PLN
+  Expenses:Марко:Продукти
+
+2026-09-23 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -11.57 PLN
+  Expenses:Марко:Продукти
+
+2026-09-25 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -15.20 PLN
+  Expenses:Марко:Продукти
+
+2026-09-26 * "AUCHAN WARSZAWA"
+  Assets:Марко:Рахунок                        -278.88 PLN
+  Expenses:Марко:Продукти
+
+2026-09-26 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -29.29 PLN
+  Expenses:Марко:Продукти
+
+2026-09-28 * "NORTHWIND LOGISTICS SP. Z O.O. WYNAGRODZENIE 09/2026"
+  Assets:Марко:Рахунок                        7600.00 PLN
+  Income:Марко:Зарплата
+
+2026-09-28 * "KAUFLAND WARSZAWA MOKOTÓW"
+  Assets:Марко:Рахунок                        -241.25 PLN
+  Expenses:Марко:Продукти
+
+2026-09-28 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -26.40 PLN
+  Expenses:Марко:Продукти
+
+2026-09-28 * "PYSZNE.PL"
+  Assets:Марко:Рахунок                         -72.29 PLN
+  Expenses:Марко:Доставка-Їжі
+
+2026-09-30 * "BIEDRONKA 4417 WARSZAWA"
+  Assets:Марко:Рахунок                         -51.22 PLN
+  Expenses:Марко:Продукти
+
+2026-09-30 * "COSTA COFFEE WARSZAWA"
+  Assets:Марко:Рахунок                         -21.46 PLN
+  Expenses:Марко:Кафе
+
+2026-10-01 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -32.44 PLN
+  Expenses:Марко:Продукти
+
+2026-10-03 * "ZDROFIT KARNET MIESIĘCZNY WARSZAWA" #fixed
+  Assets:Марко:Рахунок                        -159.00 PLN
+  Expenses:Марко:Спорт
+
+2026-10-04 * "BIEDRONKA 4417 WARSZAWA"
+  Assets:Марко:Рахунок                         -21.46 PLN
+  Expenses:Марко:Продукти
+
+2026-10-04 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -23.24 PLN
+  Expenses:Марко:Продукти
+
+2026-10-05 * "BIEDRONKA 4417 WARSZAWA"
+  Assets:Марко:Рахунок                         -59.49 PLN
+  Expenses:Марко:Продукти
+
+2026-10-05 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -21.68 PLN
+  Expenses:Марко:Продукти
+
+2026-10-05 * "BOLT.EU/R TALLINN"
+  Assets:Марко:Рахунок                         -23.80 PLN
+  Expenses:Марко:Транспорт
+
+2026-10-06 * "GOOGLE *YOUTUBE PREMIUM" #fixed
+  Assets:Марко:Рахунок                         -25.99 PLN
+  Expenses:Марко:Підписки
+
+2026-10-06 * "PYSZNE.PL"
+  Assets:Марко:Рахунок                         -82.78 PLN
+  Expenses:Марко:Доставка-Їжі
+
+2026-10-07 * "KAUFLAND WARSZAWA MOKOTÓW"
+  Assets:Марко:Рахунок                        -184.86 PLN
+  Expenses:Марко:Продукти
+
+2026-10-07 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                          -9.46 PLN
+  Expenses:Марко:Продукти
+
+2026-10-07 * "PYSZNE.PL"
+  Assets:Марко:Рахунок                         -94.71 PLN
+  Expenses:Марко:Доставка-Їжі
+
+2026-10-07 * "MANEKIN WARSZAWA"
+  Assets:Марко:Рахунок                        -108.79 PLN
+  Expenses:Марко:Кафе
+
+2026-10-07 * "ALLEGRO.PL"
+  Assets:Марко:Рахунок                         -94.05 PLN
+  Expenses:Марко:Покупки
+
+2026-10-08 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -11.53 PLN
+  Expenses:Марко:Продукти
+
+2026-10-09 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -19.82 PLN
+  Expenses:Марко:Продукти
+
+2026-10-09 * "STEAMGAMES.COM 4259522985"
+  Assets:Марко:Рахунок                         -76.28 PLN
+  Expenses:Марко:Розваги
+
+2026-10-10 * "COSTA COFFEE WARSZAWA"
+  Assets:Марко:Рахунок                         -20.85 PLN
+  Expenses:Марко:Кафе
+
+2026-10-11 * "BIEDRONKA 4417 WARSZAWA"
+  Assets:Марко:Рахунок                         -35.71 PLN
+  Expenses:Марко:Продукти
+
+2026-10-11 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -11.01 PLN
+  Expenses:Марко:Продукти
+
+2026-10-12 * "ORANGE POLSKA S.A. ŚWIATŁOWÓD" #fixed
+  Assets:Марко:Рахунок                         -79.00 PLN
+  Expenses:Марко:Інтернет-Телефон
+
+2026-10-12 * "ORANGE POLSKA S.A. ABONAMENT GSM" #fixed
+  Assets:Марко:Рахунок                         -55.00 PLN
+  Expenses:Марко:Інтернет-Телефон
+
+2026-10-12 * "ŻABKA Z5821 WARSZAWA"
+  Assets:Марко:Рахунок                         -29.68 PLN
+  Expenses:Марко:Продукти
+
+2026-10-14 * "BIEDRONKA 4417 WARSZAWA"
+  Assets:Марко:Рахунок                         -23.75 PLN
+  Expenses:Марко:Продукти
+
+2026-10-14 * "BOLT.EU/R TALLINN"
+  Assets:Марко:Рахунок                         -22.44 PLN
+  Expenses:Марко:Транспорт
+
+2026-10-15 * "KAUFLAND WARSZAWA MOKOTÓW"
+  Assets:Марко:Рахунок                        -178.95 PLN
+  Expenses:Марко:Продукти
+
+2026-10-15 * "UBER *TRIP HELP.UBER.COM"
+  Assets:Марко:Рахунок                         -42.46 PLN
+  Expenses:Марко:Транспорт
+
+2026-10-15 * "PYSZNE.PL"
+  Assets:Марко:Рахунок                         -92.12 PLN
+  Expenses:Марко:Доставка-Їжі
+
+2026-08-02 balance Assets:Марко:Рахунок 2816.18 PLN
+2026-08-03 balance Assets:Марко:Рахунок 2781.11 PLN
+2026-08-04 balance Assets:Марко:Рахунок 2395.90 PLN
+2026-08-05 balance Assets:Марко:Рахунок 2214.05 PLN
+2026-08-07 balance Assets:Марко:Рахунок 2188.06 PLN
+2026-08-09 balance Assets:Марко:Рахунок 2101.06 PLN
+2026-08-10 balance Assets:Марко:Рахунок 1975.62 PLN
+2026-08-12 balance Assets:Марко:Рахунок 1956.04 PLN
+2026-08-13 balance Assets:Марко:Рахунок 1799.72 PLN
+2026-08-15 balance Assets:Марко:Рахунок 1540.91 PLN
+2026-08-16 balance Assets:Марко:Рахунок 1501.49 PLN
+2026-08-17 balance Assets:Марко:Рахунок 1447.10 PLN
+2026-08-18 balance Assets:Марко:Рахунок 1327.36 PLN
+2026-08-20 balance Assets:Марко:Рахунок 1301.73 PLN
+2026-08-21 balance Assets:Марко:Рахунок 1159.43 PLN
+2026-08-22 balance Assets:Марко:Рахунок 1099.09 PLN
+2026-08-23 balance Assets:Марко:Рахунок 998.10 PLN
+2026-08-24 balance Assets:Марко:Рахунок 829.49 PLN
+2026-08-25 balance Assets:Марко:Рахунок 792.36 PLN
+2026-08-26 balance Assets:Марко:Рахунок 723.75 PLN
+2026-08-28 balance Assets:Марко:Рахунок 8216.56 PLN
+2026-08-29 balance Assets:Марко:Рахунок 8192.65 PLN
+2026-08-30 balance Assets:Марко:Рахунок 8176.22 PLN
+2026-08-31 balance Assets:Марко:Рахунок 8143.54 PLN
+2026-09-02 balance Assets:Марко:Рахунок 8124.00 PLN
+2026-09-03 balance Assets:Марко:Рахунок 8095.37 PLN
+2026-09-04 balance Assets:Марко:Рахунок 7900.11 PLN
+2026-09-06 balance Assets:Марко:Рахунок 7885.50 PLN
+2026-09-07 balance Assets:Марко:Рахунок 7844.57 PLN
+2026-09-11 balance Assets:Марко:Рахунок 7599.67 PLN
+2026-09-12 balance Assets:Марко:Рахунок 7590.01 PLN
+2026-09-13 balance Assets:Марко:Рахунок 7194.90 PLN
+2026-09-14 balance Assets:Марко:Рахунок 7035.45 PLN
+2026-09-15 balance Assets:Марко:Рахунок 7018.56 PLN
+2026-09-16 balance Assets:Марко:Рахунок 6676.37 PLN
+2026-09-18 balance Assets:Марко:Рахунок 6436.42 PLN
+2026-09-19 balance Assets:Марко:Рахунок 6424.17 PLN
+2026-09-21 balance Assets:Марко:Рахунок 6350.11 PLN
+2026-09-22 balance Assets:Марко:Рахунок 6124.21 PLN
+2026-09-23 balance Assets:Марко:Рахунок 6058.98 PLN
+2026-09-24 balance Assets:Марко:Рахунок 5988.81 PLN
+2026-09-26 balance Assets:Марко:Рахунок 5973.61 PLN
+2026-09-27 balance Assets:Марко:Рахунок 5665.44 PLN
+2026-09-29 balance Assets:Марко:Рахунок 12925.50 PLN
+2026-10-01 balance Assets:Марко:Рахунок 12852.82 PLN
+2026-10-02 balance Assets:Марко:Рахунок 12820.38 PLN
+2026-10-04 balance Assets:Марко:Рахунок 12661.38 PLN
+2026-10-05 balance Assets:Марко:Рахунок 12616.68 PLN
+2026-10-06 balance Assets:Марко:Рахунок 12511.71 PLN
+2026-10-07 balance Assets:Марко:Рахунок 12402.94 PLN
+2026-10-08 balance Assets:Марко:Рахунок 11911.07 PLN
+2026-10-09 balance Assets:Марко:Рахунок 11899.54 PLN
+2026-10-10 balance Assets:Марко:Рахунок 11803.44 PLN
+2026-10-11 balance Assets:Марко:Рахунок 11782.59 PLN
+2026-10-12 balance Assets:Марко:Рахунок 11735.87 PLN
+2026-10-13 balance Assets:Марко:Рахунок 11572.19 PLN
+2026-10-15 balance Assets:Марко:Рахунок 11526.00 PLN
+2026-10-16 balance Assets:Марко:Рахунок 11212.47 PLN

@@ -1,0 +1,639 @@
+; Згенеровано import.py з виписки Оля — не редагуйте руками.
+
+2026-08-01 * "Rent — Mokotów flat" #fixed
+  Assets:Оля:Рахунок                         -3200.00 PLN
+  Expenses:Оля:Житло
+
+2026-08-02 * "Żabka"
+  Assets:Оля:Рахунок                           -29.35 PLN
+  Expenses:Оля:Продукти
+
+2026-08-02 * "Bolt Food"
+  Assets:Оля:Рахунок                           -73.78 PLN
+  Expenses:Оля:Доставка-Їжі
+
+2026-08-03 * "ZTM Warszawa — bilet 30-dniowy" #fixed
+  Assets:Оля:Рахунок                          -110.00 PLN
+  Expenses:Оля:Транспорт
+
+2026-08-03 * "Żabka"
+  Assets:Оля:Рахунок                           -20.98 PLN
+  Expenses:Оля:Продукти
+
+2026-08-03 * "Lidl"
+  Assets:Оля:Рахунок                          -106.20 PLN
+  Expenses:Оля:Продукти
+
+2026-08-04 * "Biedronka"
+  Assets:Оля:Рахунок                           -37.55 PLN
+  Expenses:Оля:Продукти
+
+2026-08-05 * "Netflix" #fixed
+  Assets:Оля:Рахунок                           -43.00 PLN
+  Expenses:Оля:Підписки
+
+2026-08-05 * "Biedronka"
+  Assets:Оля:Рахунок                           -21.37 PLN
+  Expenses:Оля:Продукти
+
+2026-08-05 * "Bar Mleczny Prasowy"
+  Assets:Оля:Рахунок                           -39.88 PLN
+  Expenses:Оля:Кафе
+
+2026-08-06 * "Biedronka"
+  Assets:Оля:Рахунок                          -123.48 PLN
+  Expenses:Оля:Продукти
+
+2026-08-06 * "Biedronka"
+  Assets:Оля:Рахунок                          -131.81 PLN
+  Expenses:Оля:Продукти
+
+2026-08-07 * "Wolt"
+  Assets:Оля:Рахунок                           -66.47 PLN
+  Expenses:Оля:Доставка-Їжі
+
+2026-08-08 * "Żabka"
+  Assets:Оля:Рахунок                           -15.11 PLN
+  Expenses:Оля:Продукти
+
+2026-08-09 * "Biedronka"
+  Assets:Оля:Рахунок                           -67.16 PLN
+  Expenses:Оля:Продукти
+
+2026-08-09 * "Bar Mleczny Prasowy"
+  Assets:Оля:Рахунок                           -27.56 PLN
+  Expenses:Оля:Кафе
+
+2026-08-09 * "Bolt"
+  Assets:Оля:Рахунок                           -36.44 PLN
+  Expenses:Оля:Транспорт
+
+2026-08-10 * "Salary — Product Co sp. z o.o."
+  Assets:Оля:Рахунок                          9800.00 PLN
+  Income:Оля:Зарплата
+
+2026-08-10 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -26.32 PLN
+  Expenses:Оля:Продукти
+
+2026-08-10 * "Rossmann"
+  Assets:Оля:Рахунок                           -81.50 PLN
+  Expenses:Оля:Краса-Побут
+
+2026-08-12 * "Spotify" #fixed
+  Assets:Оля:Рахунок                           -23.99 PLN
+  Expenses:Оля:Підписки
+
+2026-08-12 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -16.17 PLN
+  Expenses:Оля:Продукти
+
+2026-08-12 * "Lidl"
+  Assets:Оля:Рахунок                           -53.04 PLN
+  Expenses:Оля:Продукти
+
+2026-08-12 * "Bar Mleczny Prasowy"
+  Assets:Оля:Рахунок                           -25.59 PLN
+  Expenses:Оля:Кафе
+
+2026-08-13 * "Żabka"
+  Assets:Оля:Рахунок                           -29.88 PLN
+  Expenses:Оля:Продукти
+
+2026-08-13 * "Żabka"
+  Assets:Оля:Рахунок                           -25.95 PLN
+  Expenses:Оля:Продукти
+
+2026-08-14 * "Żabka"
+  Assets:Оля:Рахунок                           -12.16 PLN
+  Expenses:Оля:Продукти
+
+2026-08-14 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -34.81 PLN
+  Expenses:Оля:Продукти
+
+2026-08-15 * "Claude.ai subscription" #fixed
+  Assets:Оля:Рахунок                           -86.50 PLN
+  Expenses:Оля:Підписки
+
+2026-08-15 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -55.05 PLN
+  Expenses:Оля:Продукти
+
+2026-08-17 * "Lidl"
+  Assets:Оля:Рахунок                           -37.21 PLN
+  Expenses:Оля:Продукти
+
+2026-08-17 * "Biedronka"
+  Assets:Оля:Рахунок                           -18.58 PLN
+  Expenses:Оля:Продукти
+
+2026-08-17 * "Wolt"
+  Assets:Оля:Рахунок                           -45.46 PLN
+  Expenses:Оля:Доставка-Їжі
+
+2026-08-18 * "Żabka"
+  Assets:Оля:Рахунок                           -24.09 PLN
+  Expenses:Оля:Продукти
+
+2026-08-18 * "Biedronka"
+  Assets:Оля:Рахунок                           -67.47 PLN
+  Expenses:Оля:Продукти
+
+2026-08-18 * "Bar Mleczny Prasowy"
+  Assets:Оля:Рахунок                           -43.69 PLN
+  Expenses:Оля:Кафе
+
+2026-08-18 * "Bolt"
+  Assets:Оля:Рахунок                           -30.63 PLN
+  Expenses:Оля:Транспорт
+
+2026-08-19 * "Uber"
+  Assets:Оля:Рахунок                           -42.93 PLN
+  Expenses:Оля:Транспорт
+
+2026-08-20 * "Play — abonament" #fixed
+  Assets:Оля:Рахунок                           -45.00 PLN
+  Expenses:Оля:Телефон
+
+2026-08-20 * "Bolt"
+  Assets:Оля:Рахунок                           -24.51 PLN
+  Expenses:Оля:Транспорт
+
+2026-08-21 * "Bolt Food"
+  Assets:Оля:Рахунок                           -37.51 PLN
+  Expenses:Оля:Доставка-Їжі
+
+2026-08-22 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -20.43 PLN
+  Expenses:Оля:Продукти
+
+2026-08-22 * "Żabka"
+  Assets:Оля:Рахунок                            -9.72 PLN
+  Expenses:Оля:Продукти
+
+2026-08-22 * "Bolt Food"
+  Assets:Оля:Рахунок                           -86.37 PLN
+  Expenses:Оля:Доставка-Їжі
+
+2026-08-23 * "Bar Mleczny Prasowy"
+  Assets:Оля:Рахунок                           -43.94 PLN
+  Expenses:Оля:Кафе
+
+2026-08-24 * "Żabka"
+  Assets:Оля:Рахунок                           -16.02 PLN
+  Expenses:Оля:Продукти
+
+2026-08-24 * "Starbucks Rondo ONZ"
+  Assets:Оля:Рахунок                           -28.03 PLN
+  Expenses:Оля:Кафе
+
+2026-08-25 * "Żabka"
+  Assets:Оля:Рахунок                            -8.14 PLN
+  Expenses:Оля:Продукти
+
+2026-08-25 * "Żabka"
+  Assets:Оля:Рахунок                           -34.24 PLN
+  Expenses:Оля:Продукти
+
+2026-08-25 * "Bolt"
+  Assets:Оля:Рахунок                           -14.11 PLN
+  Expenses:Оля:Транспорт
+
+2026-08-26 * "Żabka"
+  Assets:Оля:Рахунок                           -23.94 PLN
+  Expenses:Оля:Продукти
+
+2026-08-27 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -59.17 PLN
+  Expenses:Оля:Продукти
+
+2026-08-27 * "Starbucks Rondo ONZ"
+  Assets:Оля:Рахунок                           -30.92 PLN
+  Expenses:Оля:Кафе
+
+2026-08-29 * "Biedronka"
+  Assets:Оля:Рахунок                          -125.73 PLN
+  Expenses:Оля:Продукти
+
+2026-08-29 * "Bar Mleczny Prasowy"
+  Assets:Оля:Рахунок                           -38.12 PLN
+  Expenses:Оля:Кафе
+
+2026-08-31 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -41.88 PLN
+  Expenses:Оля:Продукти
+
+2026-08-31 * "Bolt Food"
+  Assets:Оля:Рахунок                           -84.76 PLN
+  Expenses:Оля:Доставка-Їжі
+
+2026-09-01 * "Rent — Mokotów flat" #fixed
+  Assets:Оля:Рахунок                         -3200.00 PLN
+  Expenses:Оля:Житло
+
+2026-09-01 * "Biedronka"
+  Assets:Оля:Рахунок                          -137.65 PLN
+  Expenses:Оля:Продукти
+
+2026-09-01 * "Bolt"
+  Assets:Оля:Рахунок                           -43.20 PLN
+  Expenses:Оля:Транспорт
+
+2026-09-02 * "Biedronka"
+  Assets:Оля:Рахунок                           -45.94 PLN
+  Expenses:Оля:Продукти
+
+2026-09-02 * "Biedronka"
+  Assets:Оля:Рахунок                          -130.81 PLN
+  Expenses:Оля:Продукти
+
+2026-09-02 * "Wolt"
+  Assets:Оля:Рахунок                           -57.95 PLN
+  Expenses:Оля:Доставка-Їжі
+
+2026-09-03 * "ZTM Warszawa — bilet 30-dniowy" #fixed
+  Assets:Оля:Рахунок                          -110.00 PLN
+  Expenses:Оля:Транспорт
+
+2026-09-03 * "Bolt"
+  Assets:Оля:Рахунок                           -33.08 PLN
+  Expenses:Оля:Транспорт
+
+2026-09-04 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -73.73 PLN
+  Expenses:Оля:Продукти
+
+2026-09-05 * "Netflix" #fixed
+  Assets:Оля:Рахунок                           -43.00 PLN
+  Expenses:Оля:Підписки
+
+2026-09-05 * "Lidl"
+  Assets:Оля:Рахунок                           -99.57 PLN
+  Expenses:Оля:Продукти
+
+2026-09-05 * "Bolt Food"
+  Assets:Оля:Рахунок                           -87.33 PLN
+  Expenses:Оля:Доставка-Їжі
+
+2026-09-06 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -70.08 PLN
+  Expenses:Оля:Продукти
+
+2026-09-07 * "Biedronka"
+  Assets:Оля:Рахунок                           -29.75 PLN
+  Expenses:Оля:Продукти
+
+2026-09-07 * "Żabka"
+  Assets:Оля:Рахунок                           -32.26 PLN
+  Expenses:Оля:Продукти
+
+2026-09-07 * "Bar Mleczny Prasowy"
+  Assets:Оля:Рахунок                           -38.71 PLN
+  Expenses:Оля:Кафе
+
+2026-09-08 * "Biedronka"
+  Assets:Оля:Рахунок                           -49.76 PLN
+  Expenses:Оля:Продукти
+
+2026-09-08 * "Bolt Food"
+  Assets:Оля:Рахунок                           -83.07 PLN
+  Expenses:Оля:Доставка-Їжі
+
+2026-09-09 * "Żabka"
+  Assets:Оля:Рахунок                           -15.61 PLN
+  Expenses:Оля:Продукти
+
+2026-09-09 * "Bolt"
+  Assets:Оля:Рахунок                           -45.25 PLN
+  Expenses:Оля:Транспорт
+
+2026-09-10 * "Salary — Product Co sp. z o.o."
+  Assets:Оля:Рахунок                          9800.00 PLN
+  Income:Оля:Зарплата
+
+2026-09-10 * "Biedronka"
+  Assets:Оля:Рахунок                           -34.21 PLN
+  Expenses:Оля:Продукти
+
+2026-09-10 * "Bar Mleczny Prasowy"
+  Assets:Оля:Рахунок                           -33.31 PLN
+  Expenses:Оля:Кафе
+
+2026-09-11 * "Biedronka"
+  Assets:Оля:Рахунок                           -59.78 PLN
+  Expenses:Оля:Продукти
+
+2026-09-11 * "Biedronka"
+  Assets:Оля:Рахунок                          -116.90 PLN
+  Expenses:Оля:Продукти
+
+2026-09-11 * "Wolt"
+  Assets:Оля:Рахунок                           -75.71 PLN
+  Expenses:Оля:Доставка-Їжі
+
+2026-09-12 * "Spotify" #fixed
+  Assets:Оля:Рахунок                           -23.99 PLN
+  Expenses:Оля:Підписки
+
+2026-09-12 * "Biedronka"
+  Assets:Оля:Рахунок                           -87.76 PLN
+  Expenses:Оля:Продукти
+
+2026-09-13 * "Żabka"
+  Assets:Оля:Рахунок                           -31.95 PLN
+  Expenses:Оля:Продукти
+
+2026-09-13 * "Starbucks Rondo ONZ"
+  Assets:Оля:Рахунок                           -22.91 PLN
+  Expenses:Оля:Кафе
+
+2026-09-14 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -29.45 PLN
+  Expenses:Оля:Продукти
+
+2026-09-14 * "Bolt Food"
+  Assets:Оля:Рахунок                           -48.78 PLN
+  Expenses:Оля:Доставка-Їжі
+
+2026-09-15 * "Claude.ai subscription" #fixed
+  Assets:Оля:Рахунок                           -86.50 PLN
+  Expenses:Оля:Підписки
+
+2026-09-15 * "Lidl"
+  Assets:Оля:Рахунок                           -25.37 PLN
+  Expenses:Оля:Продукти
+
+2026-09-16 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -56.21 PLN
+  Expenses:Оля:Продукти
+
+2026-09-17 * "Lidl"
+  Assets:Оля:Рахунок                           -28.14 PLN
+  Expenses:Оля:Продукти
+
+2026-09-17 * "Żabka"
+  Assets:Оля:Рахунок                           -31.79 PLN
+  Expenses:Оля:Продукти
+
+2026-09-18 * "Biedronka"
+  Assets:Оля:Рахунок                           -31.58 PLN
+  Expenses:Оля:Продукти
+
+2026-09-18 * "Lidl"
+  Assets:Оля:Рахунок                           -76.38 PLN
+  Expenses:Оля:Продукти
+
+2026-09-19 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -64.64 PLN
+  Expenses:Оля:Продукти
+
+2026-09-20 * "Play — abonament" #fixed
+  Assets:Оля:Рахунок                           -45.00 PLN
+  Expenses:Оля:Телефон
+
+2026-09-20 * "Lidl"
+  Assets:Оля:Рахунок                           -71.43 PLN
+  Expenses:Оля:Продукти
+
+2026-09-20 * "Decathlon"
+  Assets:Оля:Рахунок                          -143.18 PLN
+  Expenses:Оля:Спорт
+
+2026-09-22 * "Biedronka"
+  Assets:Оля:Рахунок                           -59.87 PLN
+  Expenses:Оля:Продукти
+
+2026-09-23 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -72.96 PLN
+  Expenses:Оля:Продукти
+
+2026-09-23 * "Bolt Food"
+  Assets:Оля:Рахунок                           -61.44 PLN
+  Expenses:Оля:Доставка-Їжі
+
+2026-09-25 * "Biedronka"
+  Assets:Оля:Рахунок                           -26.71 PLN
+  Expenses:Оля:Продукти
+
+2026-09-25 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -64.66 PLN
+  Expenses:Оля:Продукти
+
+2026-09-26 * "Starbucks Rondo ONZ"
+  Assets:Оля:Рахунок                           -14.51 PLN
+  Expenses:Оля:Кафе
+
+2026-09-27 * "Wolt"
+  Assets:Оля:Рахунок                           -69.95 PLN
+  Expenses:Оля:Доставка-Їжі
+
+2026-09-28 * "Uber"
+  Assets:Оля:Рахунок                           -17.69 PLN
+  Expenses:Оля:Транспорт
+
+2026-09-29 * "Bar Mleczny Prasowy"
+  Assets:Оля:Рахунок                           -34.28 PLN
+  Expenses:Оля:Кафе
+
+2026-09-30 * "Żabka"
+  Assets:Оля:Рахунок                           -17.12 PLN
+  Expenses:Оля:Продукти
+
+2026-10-01 * "Rent — Mokotów flat" #fixed
+  Assets:Оля:Рахунок                         -3200.00 PLN
+  Expenses:Оля:Житло
+
+2026-10-01 * "Lidl"
+  Assets:Оля:Рахунок                           -28.35 PLN
+  Expenses:Оля:Продукти
+
+2026-10-02 * "Żabka"
+  Assets:Оля:Рахунок                           -26.90 PLN
+  Expenses:Оля:Продукти
+
+2026-10-02 * "Biedronka"
+  Assets:Оля:Рахунок                          -109.84 PLN
+  Expenses:Оля:Продукти
+
+2026-10-02 * "Decathlon"
+  Assets:Оля:Рахунок                          -206.61 PLN
+  Expenses:Оля:Спорт
+
+2026-10-03 * "ZTM Warszawa — bilet 30-dniowy" #fixed
+  Assets:Оля:Рахунок                          -110.00 PLN
+  Expenses:Оля:Транспорт
+
+2026-10-03 * "Lidl"
+  Assets:Оля:Рахунок                          -141.55 PLN
+  Expenses:Оля:Продукти
+
+2026-10-03 * "Bolt"
+  Assets:Оля:Рахунок                           -23.67 PLN
+  Expenses:Оля:Транспорт
+
+2026-10-04 * "Żabka"
+  Assets:Оля:Рахунок                           -16.76 PLN
+  Expenses:Оля:Продукти
+
+2026-10-04 * "Bolt Food"
+  Assets:Оля:Рахунок                           -44.92 PLN
+  Expenses:Оля:Доставка-Їжі
+
+2026-10-05 * "Netflix" #fixed
+  Assets:Оля:Рахунок                           -43.00 PLN
+  Expenses:Оля:Підписки
+
+2026-10-05 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -76.63 PLN
+  Expenses:Оля:Продукти
+
+2026-10-06 * "Biedronka"
+  Assets:Оля:Рахунок                          -110.81 PLN
+  Expenses:Оля:Продукти
+
+2026-10-07 * "Biedronka"
+  Assets:Оля:Рахунок                          -119.79 PLN
+  Expenses:Оля:Продукти
+
+2026-10-07 * "Bar Mleczny Prasowy"
+  Assets:Оля:Рахунок                           -40.77 PLN
+  Expenses:Оля:Кафе
+
+2026-10-07 * "Bolt"
+  Assets:Оля:Рахунок                           -35.66 PLN
+  Expenses:Оля:Транспорт
+
+2026-10-09 * "Biedronka"
+  Assets:Оля:Рахунок                          -104.29 PLN
+  Expenses:Оля:Продукти
+
+2026-10-10 * "Salary — Product Co sp. z o.o."
+  Assets:Оля:Рахунок                          9800.00 PLN
+  Income:Оля:Зарплата
+
+2026-10-10 * "Żabka"
+  Assets:Оля:Рахунок                           -33.55 PLN
+  Expenses:Оля:Продукти
+
+2026-10-10 * "Starbucks Rondo ONZ"
+  Assets:Оля:Рахунок                           -24.40 PLN
+  Expenses:Оля:Кафе
+
+2026-10-11 * "Żabka"
+  Assets:Оля:Рахунок                           -34.74 PLN
+  Expenses:Оля:Продукти
+
+2026-10-11 * "Wolt"
+  Assets:Оля:Рахунок                           -41.22 PLN
+  Expenses:Оля:Доставка-Їжі
+
+2026-10-11 * "Uber"
+  Assets:Оля:Рахунок                           -38.03 PLN
+  Expenses:Оля:Транспорт
+
+2026-10-12 * "Spotify" #fixed
+  Assets:Оля:Рахунок                           -23.99 PLN
+  Expenses:Оля:Підписки
+
+2026-10-12 * "Żabka"
+  Assets:Оля:Рахунок                           -21.48 PLN
+  Expenses:Оля:Продукти
+
+2026-10-12 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -28.58 PLN
+  Expenses:Оля:Продукти
+
+2026-10-12 * "Bar Mleczny Prasowy"
+  Assets:Оля:Рахунок                           -39.75 PLN
+  Expenses:Оля:Кафе
+
+2026-10-13 * "Biedronka"
+  Assets:Оля:Рахунок                           -74.48 PLN
+  Expenses:Оля:Продукти
+
+2026-10-13 * "Carrefour Express"
+  Assets:Оля:Рахунок                           -29.61 PLN
+  Expenses:Оля:Продукти
+
+2026-10-14 * "Żabka"
+  Assets:Оля:Рахунок                           -20.48 PLN
+  Expenses:Оля:Продукти
+
+2026-10-14 * "Rossmann"
+  Assets:Оля:Рахунок                           -41.69 PLN
+  Expenses:Оля:Краса-Побут
+
+2026-10-15 * "Claude.ai subscription" #fixed
+  Assets:Оля:Рахунок                           -86.50 PLN
+  Expenses:Оля:Підписки
+
+2026-08-02 balance Assets:Оля:Рахунок 1300.00 PLN
+2026-08-03 balance Assets:Оля:Рахунок 1196.87 PLN
+2026-08-04 balance Assets:Оля:Рахунок 959.69 PLN
+2026-08-05 balance Assets:Оля:Рахунок 922.14 PLN
+2026-08-06 balance Assets:Оля:Рахунок 817.89 PLN
+2026-08-07 balance Assets:Оля:Рахунок 562.60 PLN
+2026-08-08 balance Assets:Оля:Рахунок 496.13 PLN
+2026-08-09 balance Assets:Оля:Рахунок 481.02 PLN
+2026-08-10 balance Assets:Оля:Рахунок 349.86 PLN
+2026-08-11 balance Assets:Оля:Рахунок 10042.04 PLN
+2026-08-13 balance Assets:Оля:Рахунок 9923.25 PLN
+2026-08-14 balance Assets:Оля:Рахунок 9867.42 PLN
+2026-08-15 balance Assets:Оля:Рахунок 9820.45 PLN
+2026-08-16 balance Assets:Оля:Рахунок 9678.90 PLN
+2026-08-18 balance Assets:Оля:Рахунок 9577.65 PLN
+2026-08-19 balance Assets:Оля:Рахунок 9411.77 PLN
+2026-08-20 balance Assets:Оля:Рахунок 9368.84 PLN
+2026-08-21 balance Assets:Оля:Рахунок 9299.33 PLN
+2026-08-22 balance Assets:Оля:Рахунок 9261.82 PLN
+2026-08-23 balance Assets:Оля:Рахунок 9145.30 PLN
+2026-08-24 balance Assets:Оля:Рахунок 9101.36 PLN
+2026-08-25 balance Assets:Оля:Рахунок 9057.31 PLN
+2026-08-26 balance Assets:Оля:Рахунок 9000.82 PLN
+2026-08-27 balance Assets:Оля:Рахунок 8976.88 PLN
+2026-08-28 balance Assets:Оля:Рахунок 8886.79 PLN
+2026-08-30 balance Assets:Оля:Рахунок 8722.94 PLN
+2026-09-01 balance Assets:Оля:Рахунок 8596.30 PLN
+2026-09-02 balance Assets:Оля:Рахунок 5215.45 PLN
+2026-09-03 balance Assets:Оля:Рахунок 4980.75 PLN
+2026-09-04 balance Assets:Оля:Рахунок 4837.67 PLN
+2026-09-05 balance Assets:Оля:Рахунок 4763.94 PLN
+2026-09-06 balance Assets:Оля:Рахунок 4534.04 PLN
+2026-09-07 balance Assets:Оля:Рахунок 4463.96 PLN
+2026-09-08 balance Assets:Оля:Рахунок 4363.24 PLN
+2026-09-09 balance Assets:Оля:Рахунок 4230.41 PLN
+2026-09-10 balance Assets:Оля:Рахунок 4169.55 PLN
+2026-09-11 balance Assets:Оля:Рахунок 13902.03 PLN
+2026-09-12 balance Assets:Оля:Рахунок 13649.64 PLN
+2026-09-13 balance Assets:Оля:Рахунок 13537.89 PLN
+2026-09-14 balance Assets:Оля:Рахунок 13483.03 PLN
+2026-09-15 balance Assets:Оля:Рахунок 13404.80 PLN
+2026-09-16 balance Assets:Оля:Рахунок 13292.93 PLN
+2026-09-17 balance Assets:Оля:Рахунок 13236.72 PLN
+2026-09-18 balance Assets:Оля:Рахунок 13176.79 PLN
+2026-09-19 balance Assets:Оля:Рахунок 13068.83 PLN
+2026-09-20 balance Assets:Оля:Рахунок 13004.19 PLN
+2026-09-21 balance Assets:Оля:Рахунок 12744.58 PLN
+2026-09-23 balance Assets:Оля:Рахунок 12684.71 PLN
+2026-09-24 balance Assets:Оля:Рахунок 12550.31 PLN
+2026-09-26 balance Assets:Оля:Рахунок 12458.94 PLN
+2026-09-27 balance Assets:Оля:Рахунок 12444.43 PLN
+2026-09-28 balance Assets:Оля:Рахунок 12374.48 PLN
+2026-09-29 balance Assets:Оля:Рахунок 12356.79 PLN
+2026-09-30 balance Assets:Оля:Рахунок 12322.51 PLN
+2026-10-01 balance Assets:Оля:Рахунок 12305.39 PLN
+2026-10-02 balance Assets:Оля:Рахунок 9077.04 PLN
+2026-10-03 balance Assets:Оля:Рахунок 8733.69 PLN
+2026-10-04 balance Assets:Оля:Рахунок 8458.47 PLN
+2026-10-05 balance Assets:Оля:Рахунок 8396.79 PLN
+2026-10-06 balance Assets:Оля:Рахунок 8277.16 PLN
+2026-10-07 balance Assets:Оля:Рахунок 8166.35 PLN
+2026-10-08 balance Assets:Оля:Рахунок 7970.13 PLN
+2026-10-10 balance Assets:Оля:Рахунок 7865.84 PLN
+2026-10-11 balance Assets:Оля:Рахунок 17607.89 PLN
+2026-10-12 balance Assets:Оля:Рахунок 17493.90 PLN
+2026-10-13 balance Assets:Оля:Рахунок 17380.10 PLN
+2026-10-14 balance Assets:Оля:Рахунок 17276.01 PLN
+2026-10-15 balance Assets:Оля:Рахунок 17213.84 PLN
+2026-10-16 balance Assets:Оля:Рахунок 17127.34 PLN

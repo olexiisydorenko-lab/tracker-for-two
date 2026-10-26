@@ -1,0 +1,86 @@
+; Спільний облік Олі й Марка. Лише штучні дані з домашнього завдання.
+
+option "title" "Фінанси Олі й Марка"
+option "operating_currency" "PLN"
+
+; Операції, додані через Fava з телефона (кнопка «+»), пишуться в manual.beancount.
+2026-07-31 custom "fava-option" "default-file" "manual.beancount"
+2026-07-31 custom "fava-option" "language" "uk"
+
+; --- Оля ---
+2026-07-31 open Assets:Оля:Рахунок               PLN
+2026-07-31 open Assets:Оля:Готівка               PLN
+2026-07-31 open Income:Оля:Зарплата              PLN
+2026-07-31 open Income:Оля:Інше                  PLN
+2026-07-31 open Expenses:Оля:Житло               PLN
+2026-07-31 open Expenses:Оля:Продукти            PLN
+2026-07-31 open Expenses:Оля:Кафе                PLN
+2026-07-31 open Expenses:Оля:Доставка-Їжі        PLN
+2026-07-31 open Expenses:Оля:Транспорт           PLN
+2026-07-31 open Expenses:Оля:Підписки            PLN
+2026-07-31 open Expenses:Оля:Телефон             PLN
+2026-07-31 open Expenses:Оля:Краса-Побут         PLN
+2026-07-31 open Expenses:Оля:Спорт               PLN
+2026-07-31 open Expenses:Оля:Без-Категорії       PLN
+
+; --- Марко ---
+2026-07-31 open Assets:Марко:Рахунок             PLN
+2026-07-31 open Assets:Марко:Готівка             PLN
+2026-07-31 open Income:Марко:Зарплата            PLN
+2026-07-31 open Income:Марко:Інше                PLN
+2026-07-31 open Expenses:Марко:Продукти          PLN
+2026-07-31 open Expenses:Марко:Кафе              PLN
+2026-07-31 open Expenses:Марко:Доставка-Їжі      PLN
+2026-07-31 open Expenses:Марко:Транспорт         PLN
+2026-07-31 open Expenses:Марко:Інтернет-Телефон  PLN
+2026-07-31 open Expenses:Марко:Світло            PLN
+2026-07-31 open Expenses:Марко:Спорт             PLN
+2026-07-31 open Expenses:Марко:Підписки          PLN
+2026-07-31 open Expenses:Марко:Розваги           PLN
+2026-07-31 open Expenses:Марко:Покупки           PLN
+2026-07-31 open Expenses:Марко:Краса-Побут       PLN
+2026-07-31 open Expenses:Марко:Без-Категорії     PLN
+
+2026-07-31 open Equity:Початкові-Залишки         PLN
+
+; --- Початкові залишки ---
+2026-07-31 * "Початковий залишок на рахунку Олі"
+  Assets:Оля:Рахунок                         4500.00 PLN
+  Equity:Початкові-Залишки
+
+2026-07-31 * "Початковий залишок на рахунку Марка (з виписки)"
+  Assets:Марко:Рахунок                       2860.40 PLN
+  Equity:Початкові-Залишки
+
+2026-08-01 balance Assets:Оля:Рахунок        4500.00 PLN
+2026-08-01 balance Assets:Марко:Рахунок      2860.40 PLN
+
+; --- Групи витрат ---
+; Фіксовані: операції з тегом #fixed.
+;   Оля: оренда, ZTM, Netflix, Spotify, Claude.ai, Play.
+;   Марко: Orange, PGE, Zdrofit, YouTube Premium.
+; Змінні: усі інші витрати — ними людина може керувати.
+
+; --- Збережені запити (видно у Fava → Запит) ---
+2026-07-31 query "змінні-по-місяцях" "
+  SELECT year, month, root(account, 2) AS person, sum(number) AS variable
+  WHERE account ~ '^Expenses' AND NOT ('fixed' IN tags)
+  GROUP BY year, month, person
+  ORDER BY year, month, person"
+
+2026-07-31 query "фіксовані-по-місяцях" "
+  SELECT year, month, root(account, 2) AS person, sum(number) AS fixed
+  WHERE account ~ '^Expenses' AND 'fixed' IN tags
+  GROUP BY year, month, person
+  ORDER BY year, month, person"
+
+2026-07-31 query "витрати-по-категоріях" "
+  SELECT year, month, account, sum(number) AS total
+  WHERE account ~ '^Expenses'
+  GROUP BY year, month, account
+  ORDER BY year, month, account"
+
+; --- Операції ---
+include "ledger/olya.beancount"
+include "ledger/marko.beancount"
+include "manual.beancount"
