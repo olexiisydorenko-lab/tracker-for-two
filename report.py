@@ -8,6 +8,7 @@ render() на кожен запит, тож щойно додана з теле�
 """
 
 import calendar
+from datetime import date
 import html
 import sys
 from collections import defaultdict
@@ -313,6 +314,16 @@ h2 { font-size: 17px; margin: 2px 0 12px; }
 .people { display: inline-flex; gap: 4px; }
 .people a { padding: 4px 12px; border: 1px solid var(--border); border-radius: 999px; color: var(--text); }
 .people a.on { background: var(--text); color: var(--surface); border-color: var(--text); }
+.cash { border-color: var(--s1); }
+.cashform { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+.cashform label { display: grid; gap: 4px; font-size: 13px; color: var(--text-2); }
+.cashform input, .cashform select { font: inherit; font-size: 16px; color: var(--text); background: var(--card);
+  padding: 9px 10px; border: 1px solid var(--border); border-radius: 8px; width: 100%; }
+.cashform button { grid-column: 1 / -1; font: inherit; font-weight: 600; padding: 11px; border: 0;
+  border-radius: 8px; background: var(--s1); color: #fff; }
+.notice { margin: 0 0 12px; padding: 8px 12px; border-radius: 8px; font-size: 14px; }
+.notice.ok { background: #e5f4e4; color: #1d5b1a; } .notice.err { background: #fbebeb; color: #8a1f1a; }
+@media (max-width: 480px) { .cashform { grid-template-columns: 1fr; } }
 .logout { margin-left: auto; color: var(--text-2) !important; }
 @media (max-width: 480px) {
   .hrow { grid-template-columns: 90px 1fr 84px; }
@@ -325,18 +336,56 @@ const buttons = document.querySelectorAll('.tabs button');
 function show(id) {
   document.querySelectorAll('.month').forEach(s => s.hidden = s.id !== id);
   buttons.forEach(b => b.setAttribute('aria-selected', b.dataset.target === id));
-  history.replaceState(null, '', '#' + id);
+  if (location.hash !== '#add') history.replaceState(null, '', '#' + id);
 }
 buttons.forEach(b => b.addEventListener('click', () => show(b.dataset.target)));
 const start = location.hash.slice(1);
-show(document.getElementById(start) ? start : buttons[buttons.length - 1].dataset.target);
+const isMonth = document.getElementById(start)?.classList.contains('month');
+show(isMonth ? start : buttons[buttons.length - 1].dataset.target);
 """
 
 
 LOGOUT = '<a class="logout" href="{prefix}/logout">Вийти</a>'
 
 
-def render(slug, prefix="", ledger=LEDGER, with_nav=True):
+def cash_form(entries, slug, person, prefix, notice):
+    """Проста форма «Додати готівку» — без Fava і без знання бухгалтерії."""
+    # Найчастіші категорії — першими у списку (на телефоні менше гортати).
+    uses = defaultdict(int)
+    for e in entries:
+        if isinstance(e, data.Transaction):
+            for p in e.postings:
+                uses[p.account] += 1
+    accounts = sorted(
+        (e.account for e in entries
+         if isinstance(e, data.Open) and e.account.startswith(f"Expenses:{person}:")
+         and not e.account.endswith("Без-Категорії")),
+        key=lambda a: -uses[a])
+    options = "".join(
+        f'<option value="{esc(a)}">{esc(a.split(":")[-1].replace("-", " "))}</option>' for a in accounts)
+    today = date.today().isoformat()
+    msg = ""
+    if notice:
+        kind, text = notice
+        msg = f'<p class="notice {kind}" role="status">{esc(text)}</p>'
+    return f"""
+  <section class="card cash" id="add">
+    <div class="q">Готівка</div>
+    <h2>Додати витрату готівкою</h2>
+    {msg}
+    <form method="post" action="{prefix}/add" class="cashform">
+      <input type="hidden" name="who" value="{slug}">
+      <label>Сума, зл<input name="amount" inputmode="decimal" placeholder="12,50" required autocomplete="off"></label>
+      <label>Категорія<select name="account" required>{options}</select></label>
+      <label>Що купили<input name="note" maxlength="80" placeholder="Кава, ринок…" autocomplete="off"></label>
+      <label>Дата<input name="date" type="date" value="{today}" min="2026-08-01" max="{today}" required></label>
+      <button type="submit">Додати</button>
+    </form>
+    <p class="note">Лише готівка: витрати з картки прийдуть з банківської виписки.</p>
+  </section>"""
+
+
+def render(slug, prefix="", ledger=LEDGER, with_nav=True, notice=None):
     """HTML-сторінка звіту для людини slug ('olya' або 'marko')."""
     person = PEOPLE[slug]
     entries, errors, options = loader.load_file(str(ledger))
@@ -366,7 +415,7 @@ def render(slug, prefix="", ledger=LEDGER, with_nav=True):
             f'<a href="{prefix}/?who={s_}" class="{"on" if s_ == slug else ""}">{p}</a>'
             for s_, p in PEOPLE.items())
         nav = (f'<nav class="nav"><span class="people">{people}</span>'
-               f'<a href="{prefix}/fava/">Додати витрату (Fava)</a>'
+               f'<a href="#add">+ Готівка</a><a href="{prefix}/fava/">Fava</a>'
                f'{LOGOUT.format(prefix=prefix)}</nav>')
 
     return f"""<!doctype html>
@@ -384,6 +433,7 @@ def render(slug, prefix="", ledger=LEDGER, with_nav=True):
     <h1>Фінанси: {person}</h1>
     <div class="tabs" role="tablist">{"".join(tabs)}</div>
   </div>
+  {cash_form(entries, slug, person, prefix, notice) if with_nav else ""}
   {"".join(sections)}
 </main>
 <script>{SCRIPT}</script>

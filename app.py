@@ -36,6 +36,7 @@ from dotenv import load_dotenv
 ROOT = Path(__file__).parent
 load_dotenv(ROOT / ".env")  # секрети з .env поруч (він у .gitignore), не з коду
 
+import cash  # noqa: E402
 import report  # noqa: E402
 import storage  # noqa: E402
 LEDGER = ROOT / "main.beancount"
@@ -135,7 +136,27 @@ def home():
     who = request.args.get("who", "marko")
     if who not in report.PEOPLE:
         who = "marko"
-    return report.render(who, prefix=request.script_root, ledger=LEDGER)
+    notice = None
+    if request.args.get("added"):
+        notice = ("ok", f"Додано: {request.args['added']}")
+    return report.render(who, prefix=request.script_root, ledger=LEDGER, notice=notice)
+
+
+@web.post("/add")
+def add():
+    """Готівкова витрата з форми на головній сторінці."""
+    who = request.form.get("who", "marko")
+    if who not in report.PEOPLE:
+        who = "marko"
+    try:
+        day, amount, category = cash.add_cash(
+            LEDGER, report.PEOPLE[who], request.form.get("date"), request.form.get("amount"),
+            request.form.get("account"), request.form.get("note"))
+    except cash.CashError as err:
+        return report.render(who, prefix=request.script_root, ledger=LEDGER, notice=("err", str(err))), 400
+    added = f"{amount} зл, {category}, {day:%d.%m}".replace(".", ",", 1)
+    # Post/Redirect/Get: перезавантаження сторінки не додасть витрату вдруге.
+    return redirect(f"{request.script_root}/?who={who}&added={quote(added)}#add", 303)
 
 
 # ---------- Захист усього застосунку ----------
