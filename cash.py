@@ -22,6 +22,7 @@ import storage
 
 _lock = threading.Lock()
 MAX_AMOUNT = Decimal("100000")
+_seen_nonces = set()  # захист від подвійного натискання «Додати»
 
 
 class CashError(ValueError):
@@ -67,14 +68,23 @@ def clean_text(text):
     return text.replace("\\", "").replace('"', "'")
 
 
-def add_cash(ledger, person, day_text, amount_text, account, note):
+class Duplicate(Exception):
+    """Ця форма вже була надіслана (повторне натискання)."""
+
+
+def add_cash(ledger, person, day_text, amount_text, account, note, nonce=""):
     """Дописує готівкову витрату. Повертає (дата, сума, категорія) або кидає CashError."""
     day = parse_date(day_text)
     amount = parse_amount(amount_text)
 
     with _lock:
+        if nonce:
+            if nonce in _seen_nonces:
+                raise Duplicate()
+            _seen_nonces.add(nonce)
         entries, errors, _ = loader.load_file(str(ledger))
         if account not in expense_accounts(entries, person):
+            _seen_nonces.discard(nonce)
             raise CashError("Оберіть категорію зі списку.")
         cash_account = f"Assets:{person}:Готівка"
         narration = clean_text(note) or account.split(":")[-1].replace("-", " ")
@@ -89,7 +99,9 @@ def add_cash(ledger, person, day_text, amount_text, account, note):
         _, new_errors, _ = loader.load_file(str(ledger))
         if len(new_errors) > len(errors):
             manual.write_text(before, encoding="utf-8")  # відкат: облік має лишатися чистим
+            _seen_nonces.discard(nonce)
             raise CashError("Облік не прийняв запис, нічого не збережено.")
 
-    storage.push()
+    # Коміт у GitHub — у фоні, щоб людина не чекала відповіді від GitHub.
+    threading.Thread(target=storage.push, daemon=True).start()
     return day, amount, account.split(":")[-1].replace("-", " ")

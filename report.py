@@ -8,6 +8,7 @@ render() на кожен запит, тож щойно додана з теле�
 """
 
 import calendar
+import secrets
 from datetime import date
 import html
 import sys
@@ -319,6 +320,7 @@ h2 { font-size: 17px; margin: 2px 0 12px; }
 .cashform label { display: grid; gap: 4px; font-size: 13px; color: var(--text-2); }
 .cashform input, .cashform select { font: inherit; font-size: 16px; color: var(--text); background: var(--card);
   padding: 9px 10px; border: 1px solid var(--border); border-radius: 8px; width: 100%; }
+.cashform button:disabled { opacity: .6; }
 .cashform button { grid-column: 1 / -1; font: inherit; font-weight: 600; padding: 11px; border: 0;
   border-radius: 8px; background: var(--s1); color: #fff; }
 .notice { margin: 0 0 12px; padding: 8px 12px; border-radius: 8px; font-size: 14px; }
@@ -333,6 +335,10 @@ h2 { font-size: 17px; margin: 2px 0 12px; }
 
 SCRIPT = """
 const buttons = document.querySelectorAll('.tabs button');
+const cashForm = document.querySelector('.cashform');
+if (cashForm) cashForm.addEventListener('submit', () => {
+  const b = cashForm.querySelector('button'); b.disabled = true; b.textContent = 'Зберігаю…';
+});
 function show(id) {
   document.querySelectorAll('.month').forEach(s => s.hidden = s.id !== id);
   buttons.forEach(b => b.setAttribute('aria-selected', b.dataset.target === id));
@@ -375,6 +381,7 @@ def cash_form(entries, slug, person, prefix, notice):
     {msg}
     <form method="post" action="{prefix}/add" class="cashform">
       <input type="hidden" name="who" value="{slug}">
+      <input type="hidden" name="nonce" value="{secrets.token_hex(8)}">
       <label>Сума, зл<input name="amount" inputmode="decimal" placeholder="12,50" required autocomplete="off"></label>
       <label>Категорія<select name="account" required>{options}</select></label>
       <label>Що купили<input name="note" maxlength="80" placeholder="Кава, ринок…" autocomplete="off"></label>

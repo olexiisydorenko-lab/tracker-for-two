@@ -151,7 +151,9 @@ def add():
     try:
         day, amount, category = cash.add_cash(
             LEDGER, report.PEOPLE[who], request.form.get("date"), request.form.get("amount"),
-            request.form.get("account"), request.form.get("note"))
+            request.form.get("account"), request.form.get("note"), request.form.get("nonce", ""))
+    except cash.Duplicate:
+        return redirect(f"{request.script_root}/?who={who}#add", 303)
     except cash.CashError as err:
         return report.render(who, prefix=request.script_root, ledger=LEDGER, notice=("err", str(err))), 400
     added = f"{amount} зл, {category}, {day:%d.%m}".replace(".", ",", 1)
