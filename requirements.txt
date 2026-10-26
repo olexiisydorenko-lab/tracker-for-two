@@ -2,3 +2,4 @@ beancount==3.2.3
 beanquery==0.2.0
 fava==1.30.16
 python-dotenv>=1.0
+gunicorn>=22

@@ -1,0 +1,26 @@
+# Render Blueprint: New → Blueprint → вибрати цей репозиторій.
+services:
+  - type: web
+    name: tracker-for-two
+    runtime: python
+    plan: free
+    # Збірка падає, якщо bean-check знайде помилку або контрольні цифри не збіжаться.
+    buildCommand: pip install -r requirements.txt && python check.py
+    # Один процес: Fava тримає облік у пам'яті, а storage.py — sha останнього коміту.
+    startCommand: gunicorn wsgi:application --workers 1 --threads 4 --timeout 120 --bind 0.0.0.0:$PORT
+    healthCheckPath: /login
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: TRACKER_USER
+        value: marko
+      - key: TRACKER_PASSWORD      # вводиться вручну в Render, у репозиторії його немає
+        sync: false
+      - key: SECRET_KEY            # Render генерує випадкове значення сам
+        generateValue: true
+      - key: GITHUB_TOKEN          # fine-grained токен лише до цього репозиторію
+        sync: false
+      - key: GITHUB_REPO
+        value: olexiisydorenko-lab/tracker-for-two
+      - key: GITHUB_BRANCH
+        value: main

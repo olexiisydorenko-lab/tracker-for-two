@@ -9,8 +9,10 @@ AuthMiddleware над усім застосунком, тож вона захи�
 
 Секрети беруться лише зі змінних середовища (див. .env.example):
   TRACKER_USER            логін (за замовчуванням marko)
-  TRACKER_PASSWORD_HASH   хеш пароля з werkzeug (див. README)
+  TRACKER_PASSWORD_HASH   хеш пароля з werkzeug (див. README) — або
+  TRACKER_PASSWORD        пароль у змінній середовища хостингу (не в коді)
   SECRET_KEY              ключ для підпису cookie входу
+  GITHUB_TOKEN, GITHUB_REPO  збереження ручних операцій між перезапусками (storage.py)
   TRACKER_DEV=1           лише для локального запуску без HTTPS
 """
 
@@ -35,6 +37,7 @@ ROOT = Path(__file__).parent
 load_dotenv(ROOT / ".env")  # секрети з .env поруч (він у .gitignore), не з коду
 
 import report  # noqa: E402
+import storage  # noqa: E402
 LEDGER = ROOT / "main.beancount"
 COOKIE = "tracker_auth"
 SESSION_DAYS = 30
@@ -48,7 +51,11 @@ def require_env(name):
 
 
 USER = os.environ.get("TRACKER_USER", "marko")
-PASSWORD_HASH = require_env("TRACKER_PASSWORD_HASH")
+# Пароль задається або хешем (краще), або відкритим значенням у змінній середовища хостингу.
+PASSWORD_HASH = os.environ.get("TRACKER_PASSWORD_HASH")
+PASSWORD = os.environ.get("TRACKER_PASSWORD")
+if not (PASSWORD_HASH or PASSWORD):
+    raise RuntimeError("Не задано TRACKER_PASSWORD_HASH або TRACKER_PASSWORD — див. .env.example")
 SECRET_KEY = require_env("SECRET_KEY")
 DEV = os.environ.get("TRACKER_DEV") == "1"
 
@@ -101,7 +108,11 @@ def login_form():
 @web.post("/login")
 def login_submit():
     user_ok = hmac.compare_digest(request.form.get("username", ""), USER)
-    pass_ok = check_password_hash(PASSWORD_HASH, request.form.get("password", ""))
+    given = request.form.get("password", "")
+    if PASSWORD_HASH:
+        pass_ok = check_password_hash(PASSWORD_HASH, given)
+    else:
+        pass_ok = hmac.compare_digest(given.encode(), PASSWORD.encode())
     if not (user_ok and pass_ok):
         time.sleep(1)  # гальмуємо підбір пароля
         return LOGIN_PAGE.format(error='<p class="err">Невірний логін або пароль.</p>',
@@ -132,7 +143,7 @@ def home():
 class AuthMiddleware:
     """Пускає далі лише з дійсною cookie входу; без неї — 302 на /login.
 
-    HTTP → HTTPS перенаправляє сам PythonAnywhere (налаштування «Force HTTPS»),
+    HTTP → HTTPS перенаправляє сам хостинг (Render робить це завжди),
     а цей шар додає HSTS, щоб браузер більше не пробував HTTP.
     """
 
@@ -178,10 +189,12 @@ class AuthMiddleware:
         return resp
 
 
+# На Render диск тимчасовий: спершу забираємо ручні операції з GitHub, потім вантажимо облік.
+storage.pull()
 fava = create_fava([LEDGER], load=True, poll_watcher=True)
 
-application = ProxyFix(  # PythonAnywhere віддає HTTPS через проксі
-    AuthMiddleware(DispatcherMiddleware(web, {"/fava": fava})),
+application = ProxyFix(  # Render віддає HTTPS через проксі
+    AuthMiddleware(DispatcherMiddleware(web, {"/fava": storage.SyncAfterWrite(fava)})),
     x_proto=1, x_host=1,
 )
 
